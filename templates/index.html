@@ -23,20 +23,6 @@
 
         <div class="span10" style="box-sizing: border-box;">
 
-            {% if domain_data.language != "python" %}
-            <div>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Interactive Tutorials Top -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:728px;height:90px"
-                     data-ad-client="ca-pub-3723950136133694"
-                     data-ad-slot="2345161899"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            {% endif %}
-
             {% if page_title %}
             <ul class="breadcrumb" style="margin-top: 10px">
               {% if back_chapter %}
@@ -101,39 +87,6 @@
 
             <div class="hidden-phone">
 
-            {% if domain_data.courses %}
-            <h3>Online Courses</h3>
-            <div class="row">
-
-                {% for course in domain_data.courses %}
-                <div class="course span2">
-                    <a href="{{ course.link }}">
-                        <img src="{{ course.image_url }}">
-                        <p style="font-weight: bold; margin-top: 10px; font-size: 14px">{{ course.link_name }}</p>
-{#                    <div>Retail Price: ${{ course.retail_price }}</div>#}
-{#                    <div style="text-size: 12px">{{ course.advertiser }}</div>#}
-                    </a>
-                    <img src="{{ course.pixel_url }}" width="1" height="1" border="0"/>
-                </div>
-                {% endfor %}
-            </div>
-            {% endif %}
-
-            {% if domain_data.language != "python" %}
-            <div>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Interactive Tutorials Bottom -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:728px;height:90px"
-                     data-ad-client="ca-pub-3723950136133694"
-                     data-ad-slot="6124145877"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-            <script type="text/javascript" src="https://www.spoj.com/banner.js"></script>
-            {% endif %}
-
             {% if domain_data.language == "java" and False %}
             <!-- Insticator API Embed Code -->
             <div id="insticator-container">
@@ -151,61 +104,7 @@
             </div>
 
         </div>
-        <div class="span2 hidden-phone" style="margin-left: 10px">
-            <div id="google-ad-right">
-                {% if domain_data.language != "python" %}
-                <div style="margin-bottom: 10px">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Interactive Tutorials Right -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:160px;height:600px"
-                         data-ad-client="ca-pub-3723950136133694"
-                         data-ad-slot="5528539062"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <div style="margin-bottom: 10px">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Interactive Tutorials Right 2 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:160px;height:600px"
-                         data-ad-client="ca-pub-3723950136133694"
-                         data-ad-slot="3908211929"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
 
-                </div>
-                {% endif %}
-
-
-                {% if domain_data.language == "python" %}
-                    <iframe src="https://learnpython-ads.datacamp.com/?page={{page_title}}&language={{language_code}}" frameborder="0" width="160" height="600" scrolling="no" allowtransparancy="true" style="margin-bottom: 10px; border: 0;"></iframe>
-                {% endif %}
-
-                <h4>Online Courses</h4>
-
-                {% if domain_data.language == "python" %}
-                    <a href="https://click.linksynergy.com/link?id=2mhs2G02AJA&offerid=358574.426570&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Flearn-python%2F">
-                        <img border=0 src="https://udemy-images.udemy.com/course/480x270/426570_1b91_3.jpg" >
-                        <div style="text-align: center">Learn Python: Python for Beginners</div>
-                    </a>
-                    <img border=0 width=1 height=1 src="https://ad.linksynergy.com/fs-bin/show?id=2mhs2G02AJA&bids=358574.426570&type=2&subid=0">
-
-                {% else %}
-                    <a href="https://click.linksynergy.com/fs-bin/click?id=2mhs2G02AJA&offerid=358574.1386&subid=0&type=4"><IMG border="0"   alt="Programming Category (English)300x250" src="https://ad.linksynergy.com/fs-bin/show?id=2mhs2G02AJA&bids=358574.1386&subid=0&type=4&gridnum=13"></a>
-
-                    {# <a target="_blank"  href="https://www.amazon.com/gp/product/B00NB86OYE/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00NB86OYE&linkCode=as2&tag=interactivetu-20&linkId=c1368e9bd84bc242ab9f8fe8d62b4144"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00NB86OYE&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=interactivetu-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=interactivetu-20&l=am2&o=1&a=B00NB86OYE" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />  #}
-
-                {% endif %}
-                <h4>Sponsors</h4>
-                <div style="margin-top: 10px">
-                    <a href="https://digitalocean.com/"><img src="/static/img/banners/digital-ocean.png" style="width: 160px"></a>
-                </div>
-
-            </div>
-        </div>
     </div>
 </div>
 <footer>
